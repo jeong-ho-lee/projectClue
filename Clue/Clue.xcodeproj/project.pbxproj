@@ -20,6 +20,8 @@
 		D8214B322B53C5C9002DA335 /* ClueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8214B312B53C5C9002DA335 /* ClueUITests.swift */; };
 		D8214B342B53C5C9002DA335 /* ClueUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8214B332B53C5C9002DA335 /* ClueUITestsLaunchTests.swift */; };
 		D8453BF82B6382200060EEB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8453BF72B6382200060EEB0 /* HomeViewController.swift */; };
+		D89AA2382B64D0A800C9B51D /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89AA2372B64D0A800C9B51D /* FindViewController.swift */; };
+		D89AA23A2B64D0BA00C9B51D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89AA2392B64D0BA00C9B51D /* SignUpViewController.swift */; };
 		D8A2D1312B624EFA0037690B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A2D1302B624EFA0037690B /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		D8214B312B53C5C9002DA335 /* ClueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClueUITests.swift; sourceTree = "<group>"; };
 		D8214B332B53C5C9002DA335 /* ClueUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClueUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D8453BF72B6382200060EEB0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D89AA2372B64D0A800C9B51D /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		D89AA2392B64D0BA00C9B51D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D8A2D1302B624EFA0037690B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +123,8 @@
 				D8A2D1302B624EFA0037690B /* LoginViewController.swift */,
 				53EA36082B639E2D0087065F /* temp.json */,
 				D8453BF72B6382200060EEB0 /* HomeViewController.swift */,
+				D89AA2372B64D0A800C9B51D /* FindViewController.swift */,
+				D89AA2392B64D0BA00C9B51D /* SignUpViewController.swift */,
 			);
 			path = Clue;
 			sourceTree = "<group>";
@@ -275,10 +281,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8453BF82B6382200060EEB0 /* HomeViewController.swift in Sources */,
+				D89AA23A2B64D0BA00C9B51D /* SignUpViewController.swift in Sources */,
 				D8A2D1312B624EFA0037690B /* LoginViewController.swift in Sources */,
 				D8214B142B53C5C8002DA335 /* GameScene.swift in Sources */,
 				D8214B162B53C5C8002DA335 /* GameViewController.swift in Sources */,
 				D8214B0E2B53C5C8002DA335 /* AppDelegate.swift in Sources */,
+				D89AA2382B64D0A800C9B51D /* FindViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
