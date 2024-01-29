@@ -9,6 +9,18 @@ import UIKit
 
 class FindViewController: UIViewController {
 
+    @IBOutlet weak var findLabel: UILabel!
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var notifyLabel: UILabel!
+    
+    
+    @IBAction func findButton(_ sender: Any) {
+    }
+    
+    @IBAction func findpwButton(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
