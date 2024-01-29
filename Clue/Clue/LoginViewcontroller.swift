@@ -22,7 +22,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var idTextfield: UITextField!
     @IBOutlet weak var pwTextfield: UITextField!
-    
     @IBOutlet weak var errorMessageLabel: UILabel!
     
     func load() -> Data? {
@@ -34,6 +33,12 @@ class LoginViewController: UIViewController {
         } catch {
             return nil
         }
+    }
+    
+    func goToHomeVC(_ sender: UIAlertAction) {
+        let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
+
+        self.navigationController?.pushViewController(homeVC!, animated: true)
     }
     
     @IBAction func loginButton(_ sender: Any) {
@@ -52,11 +57,7 @@ class LoginViewController: UIViewController {
             }
         }
         
-        if !loginFailed {
-            let success = UIAlertController(title: "Login", message: "Success", preferredStyle: .alert)
-            success.addAction(UIAlertAction(title: "확인", style: .cancel, handler: nil))
-            present(success, animated: true)
-        } else {
+        if loginFailed {
             let failed = UIAlertController(title: "Login", message: "Failed", preferredStyle: .alert)
             failed.addAction(UIAlertAction(title: "확인", style: .cancel, handler: nil))
             present(failed, animated: true)
