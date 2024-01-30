@@ -73,15 +73,15 @@ class LoginViewController: UIViewController {
     @IBAction func signupButton(_ sender: Any) {
         
     }
-    @objc func editingChangedHandler(_ textField: UITextField) {
+    @objc func loginEditingChangedHandler(_ textField: UITextField) {
         let label = errorMessageLabel
-        var pattern = "^[a-zA-Z0-9]*$"
-        var warning = "Please enter only letters and numbers."
+        let pattern = "^[a-zA-Z0-9]*$"
+        let warning = "Please enter only letters and numbers."
         loginMethod.detectingLoginInput(_textField: textField, _label: label!, regularExpressionPattern: pattern, warningText: warning) //import by CommonSource
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.idTextfield.addTarget(self, action: #selector(editingChangedHandler(_:)), for: .editingChanged)
-        self.pwTextfield.addTarget(self, action: #selector(editingChangedHandler(_:)), for: .editingChanged)
+        self.idTextfield.addTarget(self, action: #selector(loginEditingChangedHandler(_:)), for: .editingChanged)
+        self.pwTextfield.addTarget(self, action: #selector(loginEditingChangedHandler(_:)), for: .editingChanged)
     }
 }
