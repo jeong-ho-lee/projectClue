@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import CommonSource
 
 class FindViewController: UIViewController {
-
+    
+    var temp = LoginManage()
+    
+    
     @IBOutlet weak var findLabel: UILabel!
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -23,8 +27,9 @@ class FindViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        temp.temp()
 
-        // Do any additional setup after loading the view.
+ 
     }
     
 

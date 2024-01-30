@@ -19,6 +19,8 @@
 		D8214B282B53C5C9002DA335 /* ClueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8214B272B53C5C9002DA335 /* ClueTests.swift */; };
 		D8214B322B53C5C9002DA335 /* ClueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8214B312B53C5C9002DA335 /* ClueUITests.swift */; };
 		D8214B342B53C5C9002DA335 /* ClueUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8214B332B53C5C9002DA335 /* ClueUITestsLaunchTests.swift */; };
+		D827BC992B68CDE8003D67C5 /* CommonSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C081B72B68CCE0000D034A /* CommonSource.framework */; };
+		D827BC9A2B68CDE8003D67C5 /* CommonSource.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8C081B72B68CCE0000D034A /* CommonSource.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8453BF82B6382200060EEB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8453BF72B6382200060EEB0 /* HomeViewController.swift */; };
 		D89AA2382B64D0A800C9B51D /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89AA2372B64D0A800C9B51D /* FindViewController.swift */; };
 		D89AA23A2B64D0BA00C9B51D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89AA2392B64D0BA00C9B51D /* SignUpViewController.swift */; };
@@ -40,7 +42,35 @@
 			remoteGlobalIDString = D8214B092B53C5C8002DA335;
 			remoteInfo = Clue;
 		};
+		D8C081B62B68CCE0000D034A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8C081B12B68CCE0000D034A /* CommonSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D8C081952B68CBEA000D034A;
+			remoteInfo = CommonSource;
+		};
+		D8C081B82B68CCE0000D034A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8C081B12B68CCE0000D034A /* CommonSource.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D8C0819F2B68CBEA000D034A;
+			remoteInfo = CommonSourceTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D827BC9B2B68CDE8003D67C5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D827BC9A2B68CDE8003D67C5 /* CommonSource.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		53EA36082B639E2D0087065F /* temp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = temp.json; sourceTree = "<group>"; };
@@ -62,6 +92,8 @@
 		D89AA2372B64D0A800C9B51D /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		D89AA2392B64D0BA00C9B51D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D8A2D1302B624EFA0037690B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D8C081B12B68CCE0000D034A /* CommonSource.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommonSource.xcodeproj; path = CommonSource/CommonSource.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D8C081BB2B68CD73000D034A /* CommonSource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CommonSource; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D827BC992B68CDE8003D67C5 /* CommonSource.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +129,7 @@
 				D8214B262B53C5C9002DA335 /* ClueTests */,
 				D8214B302B53C5C9002DA335 /* ClueUITests */,
 				D8214B0B2B53C5C8002DA335 /* Products */,
+				D8C081BA2B68CD73000D034A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +146,7 @@
 		D8214B0C2B53C5C8002DA335 /* Clue */ = {
 			isa = PBXGroup;
 			children = (
+				D8C081B12B68CCE0000D034A /* CommonSource.xcodeproj */,
 				D8214B0D2B53C5C8002DA335 /* AppDelegate.swift */,
 				D8214B0F2B53C5C8002DA335 /* GameScene.sks */,
 				D8214B112B53C5C8002DA335 /* Actions.sks */,
@@ -146,6 +181,23 @@
 			path = ClueUITests;
 			sourceTree = "<group>";
 		};
+		D8C081B22B68CCE0000D034A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8C081B72B68CCE0000D034A /* CommonSource.framework */,
+				D8C081B92B68CCE0000D034A /* CommonSourceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8C081BA2B68CD73000D034A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8C081BB2B68CD73000D034A /* CommonSource */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +208,7 @@
 				D8214B062B53C5C8002DA335 /* Sources */,
 				D8214B072B53C5C8002DA335 /* Frameworks */,
 				D8214B082B53C5C8002DA335 /* Resources */,
+				D827BC9B2B68CDE8003D67C5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +289,12 @@
 			mainGroup = D8214B012B53C5C8002DA335;
 			productRefGroup = D8214B0B2B53C5C8002DA335 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D8C081B22B68CCE0000D034A /* Products */;
+					ProjectRef = D8C081B12B68CCE0000D034A /* CommonSource.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D8214B092B53C5C8002DA335 /* Clue */,
@@ -244,6 +303,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D8C081B72B68CCE0000D034A /* CommonSource.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonSource.framework;
+			remoteRef = D8C081B62B68CCE0000D034A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D8C081B92B68CCE0000D034A /* CommonSourceTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CommonSourceTests.xctest;
+			remoteRef = D8C081B82B68CCE0000D034A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D8214B082B53C5C8002DA335 /* Resources */ = {
