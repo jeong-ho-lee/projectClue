@@ -11,7 +11,20 @@ import CommonSource
 class LoginViewController: UIViewController {
     
     var loginMethod = LoginManage()
+<<<<<<< HEAD
     
+=======
+    struct UserList: Codable {
+        let totalCount: Int
+        let users: [User]
+    }
+
+    struct User: Codable {
+        let id: String
+        let pw: String
+    }
+
+>>>>>>> c1a51d0b03239726fc349a63f504a4f1c24bdf34
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var idTextfield: UITextField!
     @IBOutlet weak var pwTextfield: UITextField!
