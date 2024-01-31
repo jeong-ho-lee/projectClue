@@ -11,37 +11,11 @@ import CommonSource
 class LoginViewController: UIViewController {
     
     var loginMethod = LoginManage()
-    struct UserList: Codable {
-        let totalCount: Int
-        let users: [User]
-    }
-
-    struct User: Codable {
-        let id: String
-        let pw: String
-    }
     
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var idTextfield: UITextField!
     @IBOutlet weak var pwTextfield: UITextField!
     @IBOutlet weak var errorMessageLabel: UILabel!
-    
-    func load() -> Data? {
-        guard let fileLocation = Bundle.main.url(forResource: "temp", withExtension: "json") else { return nil }
-            
-        do {
-            let data = try Data(contentsOf: fileLocation)
-            return data
-        } catch {
-            return nil
-        }
-    }
-    
-    func goToHomeVC(_ sender: UIAlertAction) {
-        let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
-
-        self.navigationController?.pushViewController(homeVC!, animated: true)
-    }
     
     @IBAction func loginButton(_ sender: Any) {
         var loginFailed: Bool = true
@@ -49,7 +23,7 @@ class LoginViewController: UIViewController {
         var pw: String? = pwTextfield.text!
         
         guard
-            let jsonData = load(),
+            let jsonData = loginMethod.load(),
             let userList = try? JSONDecoder().decode(UserList.self, from: jsonData)
         else { return }
         
@@ -73,12 +47,14 @@ class LoginViewController: UIViewController {
     @IBAction func signupButton(_ sender: Any) {
         
     }
+    
     @objc func loginEditingChangedHandler(_ textField: UITextField) {
         let label = errorMessageLabel
         let pattern = "^[a-zA-Z0-9]*$"
         let warning = "Please enter only letters and numbers."
         loginMethod.detectingLoginInput(_textField: textField, _label: label!, regularExpressionPattern: pattern, warningText: warning) //import by CommonSource
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.idTextfield.addTarget(self, action: #selector(loginEditingChangedHandler(_:)), for: .editingChanged)

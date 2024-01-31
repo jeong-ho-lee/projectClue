@@ -8,10 +8,21 @@
 import Foundation
 import UIKit
 
+open class UserList: Codable {
+    public let totalCount: Int
+    public let users: [User]
+}
+
+open class User: Codable {
+    public let id: String
+    public let pw: String
+}
+
 open class LoginManage{
     public init(){
         
     }
+    
     @objc open func detectingLoginInput(_textField: UITextField,_label: UILabel,regularExpressionPattern: String,warningText: String){ //this function can detect user's login input.if user write wrong input,each input bar will change to red background and alert them to rewrite.
         //let regularExpressionPattern = "^[a-zA-Z0-9]*$" //only alphabet,digits available
         var isWriteInput = _textField.text?.range(of: regularExpressionPattern, options: .regularExpression ) != nil
@@ -31,4 +42,14 @@ open class LoginManage{
         }
     }
     
+    open func load() -> Data? {
+        guard let fileLocation = Bundle.main.url(forResource: "temp", withExtension: "json") else { return nil }
+            
+        do {
+            let data = try Data(contentsOf: fileLocation)
+            return data
+        } catch {
+            return nil
+        }
+    }
 }
