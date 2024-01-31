@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
         let id: String
         let pw: String
     }
-    
+
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var idTextfield: UITextField!
     @IBOutlet weak var pwTextfield: UITextField!
