@@ -118,8 +118,6 @@
                     <view key="view" contentMode="scaleToFill" id="ylM-fP-c33" userLabel="HomeViewController">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-<<<<<<< HEAD
-=======
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2I2-qb-xso">
                                 <rect key="frame" x="151" y="68" width="91" height="42"/>
@@ -150,7 +148,6 @@
                                 </connections>
                             </containerView>
                         </subviews>
->>>>>>> c1a51d0b03239726fc349a63f504a4f1c24bdf34
                         <viewLayoutGuide key="safeArea" id="dDA-If-Lz4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
@@ -396,9 +393,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1f-zM-Lm6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="2791.6030534351144" y="1057.7464788732395"/>
-=======
             <point key="canvasLocation" x="1711" y="881"/>
         </scene>
         <!--View Controller-->
@@ -446,7 +441,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTg-IV-rQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4193" y="875"/>
->>>>>>> c1a51d0b03239726fc349a63f504a4f1c24bdf34
         </scene>
     </scenes>
     <resources>
