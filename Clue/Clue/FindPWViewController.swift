@@ -42,6 +42,10 @@ class FindPWViewController: UIViewController {
             let found = UIAlertController(title: "PW Found", message: "Your PW is " + userList.users[pwFound].pw, preferredStyle: .alert)
             found.addAction(UIAlertAction(title: "Confirm", style: .default, handler: nil))
             present(found, animated: true)
+        } else {
+            let found = UIAlertController(title: "PW not found", message: "Please try again", preferredStyle: .alert)
+            found.addAction(UIAlertAction(title: "Confirm", style: .destructive, handler: nil))
+            present(found, animated: true)
         }
     }
 }
