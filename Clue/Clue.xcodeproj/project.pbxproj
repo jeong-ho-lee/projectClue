@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53D8BBA12B6A1A4B00602251 /* FindPWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D8BBA02B6A1A4B00602251 /* FindPWViewController.swift */; };
 		53EA36092B639E2D0087065F /* temp.json in Resources */ = {isa = PBXBuildFile; fileRef = 53EA36082B639E2D0087065F /* temp.json */; };
 		D8214B0E2B53C5C8002DA335 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8214B0D2B53C5C8002DA335 /* AppDelegate.swift */; };
 		D8214B102B53C5C8002DA335 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D8214B0F2B53C5C8002DA335 /* GameScene.sks */; };
@@ -73,6 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		53D8BBA02B6A1A4B00602251 /* FindPWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPWViewController.swift; sourceTree = "<group>"; };
 		53EA36082B639E2D0087065F /* temp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = temp.json; sourceTree = "<group>"; };
 		D8214B0A2B53C5C8002DA335 /* Clue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8214B0D2B53C5C8002DA335 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				D8214B132B53C5C8002DA335 /* GameScene.swift */,
 				D8214B152B53C5C8002DA335 /* GameViewController.swift */,
 				D8214B172B53C5C8002DA335 /* Main.storyboard */,
+				53D8BBA02B6A1A4B00602251 /* FindPWViewController.swift */,
 				D8214B1A2B53C5C9002DA335 /* Assets.xcassets */,
 				D8214B1C2B53C5C9002DA335 /* LaunchScreen.storyboard */,
 				D8A2D1302B624EFA0037690B /* LoginViewController.swift */,
@@ -360,6 +363,7 @@
 				D89AA23A2B64D0BA00C9B51D /* SignUpViewController.swift in Sources */,
 				D8A2D1312B624EFA0037690B /* LoginViewController.swift in Sources */,
 				D8214B142B53C5C8002DA335 /* GameScene.swift in Sources */,
+				53D8BBA12B6A1A4B00602251 /* FindPWViewController.swift in Sources */,
 				D8214B162B53C5C8002DA335 /* GameViewController.swift in Sources */,
 				D8214B0E2B53C5C8002DA335 /* AppDelegate.swift in Sources */,
 				D89AA2382B64D0A800C9B51D /* FindViewController.swift in Sources */,

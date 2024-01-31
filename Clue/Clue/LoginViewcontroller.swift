@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
         guard
             let jsonData = loginMethod.load(),
             let userList = try? JSONDecoder().decode(UserList.self, from: jsonData)
-        else { return }
+        else { print("Fail Again"); return }
         
         for i in 0..<userList.totalCount{
             if userList.users[i].id == id && userList.users[i].pw == pw{

@@ -3,15 +3,18 @@
     "users" : [
         {
             "id" : "js",
-            "pw" : "30"
+            "pw" : "30",
+            "email" : "abc@gmail.com"
         },
         {
             "id" : "jw",
-            "pw" : "28"
+            "pw" : "28",
+            "email" : "123@naver.com"
         },
         {
             "id" : "ch",
-            "pw" : "31"
+            "pw" : "31",
+            "email" : "dnd@daum.net"
         }
     ]
 }

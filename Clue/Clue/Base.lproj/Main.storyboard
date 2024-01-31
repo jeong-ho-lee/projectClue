@@ -293,21 +293,57 @@
             </objects>
             <point key="canvasLocation" x="3749" y="1058"/>
         </scene>
-        <!--View Controller-->
+        <!--FindPW View Controller-->
         <scene sceneID="6DW-6S-I0M">
             <objects>
-                <viewController id="56N-GN-Sgj" sceneMemberID="viewController">
+                <viewController id="56N-GN-Sgj" customClass="FindPWViewController" customModule="Clue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0LI-4M-Nsg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find PW" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zeb-xX-Iz8">
+                                <rect key="frame" x="85" y="143" width="222" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eqn-gg-QNx">
+                                <rect key="frame" x="82" y="277" width="229" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GxU-WE-ZI3">
+                                <rect key="frame" x="82" y="319" width="229" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhb-3K-jhi">
+                                <rect key="frame" x="168" y="445" width="57" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Find"/>
+                                <connections>
+                                    <action selector="touchBtn:" destination="56N-GN-Sgj" eventType="touchUpInside" id="duG-SD-4t3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="BsR-0h-0g7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="gPV-dj-Frt"/>
+                    <connections>
+                        <outlet property="emailTxt" destination="GxU-WE-ZI3" id="S4O-2w-g6D"/>
+                        <outlet property="findBtn" destination="Vhb-3K-jhi" id="ZKk-aa-Odv"/>
+                        <outlet property="findPWLabel" destination="Zeb-xX-Iz8" id="Khw-T2-YtO"/>
+                        <outlet property="idTxt" destination="eqn-gg-QNx" id="YmV-ZS-wYK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h1f-zM-Lm6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2793" y="1058"/>
+            <point key="canvasLocation" x="2791.6030534351144" y="1057.7464788732395"/>
         </scene>
     </scenes>
     <resources>

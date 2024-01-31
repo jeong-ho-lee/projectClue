@@ -11,6 +11,7 @@ import GameplayKit
 
 class GameViewController: UIViewController {
     var textValue: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
