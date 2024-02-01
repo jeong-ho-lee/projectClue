@@ -419,8 +419,28 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHf-PR-IBG">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="1300"/>
+                                        <subviews>
+                                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6bM-un-U6k">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            </navigationBar>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6E-7J-Bx6">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="DXp-w6-6XI"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Create Room"/>
+                                                <connections>
+                                                    <segue destination="MwC-E1-RDr" kind="show" id="H2c-TE-fOy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="w6E-7J-Bx6" firstAttribute="leading" secondItem="HHf-PR-IBG" secondAttribute="leading" id="TIa-Aa-gmu"/>
+                                            <constraint firstAttribute="trailing" secondItem="w6E-7J-Bx6" secondAttribute="trailing" id="aeC-gd-UnD"/>
+                                            <constraint firstItem="w6E-7J-Bx6" firstAttribute="top" secondItem="HHf-PR-IBG" secondAttribute="top" id="eb1-co-87h"/>
                                             <constraint firstAttribute="height" constant="1300" id="qpz-Md-QSH"/>
                                         </constraints>
                                     </view>
@@ -448,6 +468,22 @@
             </objects>
             <point key="canvasLocation" x="3319.8473282442746" y="1037.323943661972"/>
         </scene>
+        <!--Create Room View Controller-->
+        <scene sceneID="EAM-mx-I4J">
+            <objects>
+                <viewController id="MwC-E1-RDr" customClass="CreateRoomViewController" customModule="Clue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xgC-1s-zhb">
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="606"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gPb-uB-gE3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="29H-yy-BPa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WiE-QT-GaU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4152" y="1037"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="yWF-jV-RqV">
             <objects>
@@ -455,15 +491,6 @@
                     <view key="view" contentMode="scaleToFill" id="Xz0-Q7-AgB">
                         <rect key="frame" x="0.0" y="0.0" width="361" height="616"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="communtiy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bar-VZ-iTK">
-                                <rect key="frame" x="138" y="70" width="85" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SvH-3O-TUA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
