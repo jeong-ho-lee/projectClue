@@ -6,16 +6,57 @@
 //
 
 import UIKit
+import CommonSource
 
-class CreateRoomViewController: UIViewController {
-
+class CreateRoomViewController: UIViewController{
+    
+    var roomInPutMethod = LoginManage()
+    @IBOutlet weak var roomNameTF: UITextField!
+    @IBOutlet weak var roomPWTF: UITextField!
+    @IBOutlet weak var numButton: UIButton!
+    @IBOutlet weak var typeButton: UIButton!
+    @IBOutlet weak var notifyLabel: UILabel!
+    let three = UIAction(title: "3",handler:{_ in print("3")})
+    let four = UIAction(title: "4",handler:{_ in print("4")})
+    let five = UIAction(title: "5",handler:{_ in print("5")})
+    let six = UIAction(title: "6",handler:{_ in print("6")})
+    let typePrivate = UIAction(title: "Private",handler:{_ in print("Private")})
+    let typePublic = UIAction(title: "Public",handler:{_ in print("Public")})
+    @objc func roomNameHandler(_ textField: UITextField){
+        var pattern: String
+        var warning: String
+        let label = notifyLabel
+        if textField == roomNameTF{
+            pattern = "^[a-zA-Z0-9]*$"
+            warning = "Please enter only letters and numbers."
+        }
+        else if textField == roomPWTF{
+            pattern = "^\\d{4}$"
+            warning = "Please enter only 4-digit number."
+        }
+        else{
+            return
+        }
+            roomInPutMethod.detectingLoginInput(_textField: textField, _label: label!, regularExpressionPattern: pattern, warningText: warning)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let numButtonMenu = UIMenu(title:"Select number",children: [three,four,five,six])
+        let typeButtonMenu = UIMenu(title:"Selct type",children: [typePrivate,typePublic])
+        numButton.menu = numButtonMenu
+        typeButton.menu = typeButtonMenu
+        self.roomNameTF.addTarget(self, action: #selector(roomNameHandler(_:)), for:.editingChanged)
+        self.roomPWTF.addTarget(self, action: #selector(roomNameHandler(_:)), for:.editingChanged)
     }
     
 
+   
+
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
