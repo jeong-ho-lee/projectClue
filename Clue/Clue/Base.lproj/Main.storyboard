@@ -433,9 +433,25 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Create Room"/>
                                                 <connections>
-                                                    <segue destination="MwC-E1-RDr" kind="show" id="H2c-TE-fOy"/>
+                                                    <action selector="createRoomButton:" destination="W2A-G4-Kjw" eventType="touchUpInside" id="CEF-us-7sy"/>
+                                                    <segue destination="MwC-E1-RDr" kind="show" id="L8w-ae-Q24"/>
                                                 </connections>
                                             </button>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jAM-CZ-Uuj">
+                                                <rect key="frame" x="0.0" y="58" width="361" height="555"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Khs-Dj-SbX">
+                                                        <rect key="frame" x="0.0" y="50" width="361" height="44.666667938232422"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Khs-Dj-SbX" id="VvY-8z-rgF">
+                                                            <rect key="frame" x="0.0" y="0.0" width="361" height="44.666667938232422"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </tableViewCellContentView>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -466,6 +482,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAh-ZX-kGi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="W2A-G4-Kjw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3319.8473282442746" y="1037.323943661972"/>
         </scene>
@@ -474,7 +491,7 @@
             <objects>
                 <viewController id="t2Y-4D-kmD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ucF-XE-MHI">
-                        <rect key="frame" x="0.0" y="0.0" width="361" height="606"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="541-gj-6u3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -483,7 +500,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYF-o3-cK7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3300" y="1643"/>
+            <point key="canvasLocation" x="3320" y="1755"/>
         </scene>
         <!--Create Room View Controller-->
         <scene sceneID="EAM-mx-I4J">
@@ -520,7 +537,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Create Room"/>
                                 <connections>
-                                    <segue destination="t2Y-4D-kmD" kind="show" id="vgH-xr-bcy"/>
+                                    <action selector="createRoomButton:" destination="MwC-E1-RDr" eventType="touchUpInside" id="wD4-2S-2fv"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZC-lA-uu6">
@@ -588,6 +605,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="29H-yy-BPa"/>
                     <connections>
+                        <outlet property="createButton" destination="51q-cD-CjS" id="UaY-H9-13K"/>
                         <outlet property="notifyLabel" destination="6gP-pu-gkb" id="N27-8F-r8F"/>
                         <outlet property="numButton" destination="VZo-NW-7T2" id="k6E-9z-koe"/>
                         <outlet property="roomNameTF" destination="MO8-kK-apE" id="yII-Po-upR"/>
@@ -612,7 +630,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTg-IV-rQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5425" y="797"/>
+            <point key="canvasLocation" x="5221" y="1037"/>
         </scene>
     </scenes>
     <resources>

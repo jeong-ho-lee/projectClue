@@ -10,7 +10,11 @@ import CommonSource
 
 class CreateRoomViewController: UIViewController{
     
+    
     var roomInPutMethod = LoginManage()
+    var roomDataMethod = RoomInfo()
+    
+    @IBOutlet weak var createButton: UIButton!
     @IBOutlet weak var roomNameTF: UITextField!
     @IBOutlet weak var roomPWTF: UITextField!
     @IBOutlet weak var numButton: UIButton!
@@ -22,6 +26,7 @@ class CreateRoomViewController: UIViewController{
     let six = UIAction(title: "6",handler:{_ in print("6")})
     let typePrivate = UIAction(title: "Private",handler:{_ in print("Private")})
     let typePublic = UIAction(title: "Public",handler:{_ in print("Public")})
+    
     @objc func roomNameHandler(_ textField: UITextField){
         var pattern: String
         var warning: String
@@ -49,11 +54,35 @@ class CreateRoomViewController: UIViewController{
         self.roomNameTF.addTarget(self, action: #selector(roomNameHandler(_:)), for:.editingChanged)
         self.roomPWTF.addTarget(self, action: #selector(roomNameHandler(_:)), for:.editingChanged)
     }
-    
-
-   
 
     
+    @IBAction func createRoomButton(_ sender: Any) {
+        if roomNameTF.text?.isEmpty == false && roomPWTF.text?.isEmpty == false{
+            let intPW = Int(roomPWTF.text!)
+            guard let Number = numButton.menu?.title else {
+                    return
+                }
+                guard let selectedNum = Int(Number) else {
+                    return
+                }
+            guard let selectedType = typeButton.menu?.title else {
+                    return
+                }
+            roomDataMethod.name.append(roomNameTF.text!)
+            roomDataMethod.pw.append(intPW!)
+            roomDataMethod.count.append(selectedNum)
+            roomDataMethod.type.append(selectedType)
+        }
+        else {
+            let failed = UIAlertController(title: "Create room", message: "Failed", preferredStyle: .alert)
+            failed.addAction(UIAlertAction(title: "확인", style: .cancel, handler: nil))
+            present(failed, animated: true)
+            
+        }
+        
+    }
+        
+    }
     
     
     
@@ -67,4 +96,3 @@ class CreateRoomViewController: UIViewController{
     }
     */
 
-}
