@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import CommonSource
 
-class FindPWViewController: UIViewController {
+class FindPWViewController: UIViewController{
     var login = LoginManage()
     
     @IBOutlet weak var findPWLabel: UILabel!

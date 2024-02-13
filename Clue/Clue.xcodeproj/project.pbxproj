@@ -25,6 +25,7 @@
 		D89AA2382B64D0A800C9B51D /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89AA2372B64D0A800C9B51D /* FindViewController.swift */; };
 		D89AA23A2B64D0BA00C9B51D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89AA2392B64D0BA00C9B51D /* SignUpViewController.swift */; };
 		D8A2D1312B624EFA0037690B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A2D1302B624EFA0037690B /* LoginViewController.swift */; };
+		D8B763C62B74ADBD0018B817 /* roomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B763C52B74ADBD0018B817 /* roomTableViewCell.swift */; };
 		D8E1C5C62B6A1379001176B4 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1C5C52B6A1379001176B4 /* RoomViewController.swift */; };
 		D8E1C5CA2B6A138A001176B4 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1C5C92B6A138A001176B4 /* CommunityViewController.swift */; };
 		D8E1C5CC2B6A1523001176B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E1C5CB2B6A1523001176B4 /* HomeViewController.swift */; };
@@ -97,6 +98,7 @@
 		D89AA2372B64D0A800C9B51D /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		D89AA2392B64D0BA00C9B51D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D8A2D1302B624EFA0037690B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D8B763C52B74ADBD0018B817 /* roomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomTableViewCell.swift; sourceTree = "<group>"; };
 		D8C081B12B68CCE0000D034A /* CommonSource.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommonSource.xcodeproj; path = CommonSource/CommonSource.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D8C081BB2B68CD73000D034A /* CommonSource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CommonSource; sourceTree = "<group>"; };
 		D8E1C5C52B6A1379001176B4 /* RoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				D8214B152B53C5C8002DA335 /* GameViewController.swift */,
 				D8E1C5CB2B6A1523001176B4 /* HomeViewController.swift */,
 				D8214B172B53C5C8002DA335 /* Main.storyboard */,
+				D8B763C52B74ADBD0018B817 /* roomTableViewCell.swift */,
 				D8FD03332B6B7C7500027D1D /* InRoomViewController.swift */,
 				D8FD03372B6B7D8800027D1D /* CreateRoomViewController.swift */,
 				53D8BBA02B6A1A4B00602251 /* FindPWViewController.swift */,
@@ -381,6 +384,7 @@
 				D8214B162B53C5C8002DA335 /* GameViewController.swift in Sources */,
 				D8E1C5CC2B6A1523001176B4 /* HomeViewController.swift in Sources */,
 				D8214B0E2B53C5C8002DA335 /* AppDelegate.swift in Sources */,
+				D8B763C62B74ADBD0018B817 /* roomTableViewCell.swift in Sources */,
 				D89AA2382B64D0A800C9B51D /* FindViewController.swift in Sources */,
 				D8E1C5C62B6A1379001176B4 /* RoomViewController.swift in Sources */,
 			);

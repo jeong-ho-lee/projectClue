@@ -10,10 +10,8 @@ import CommonSource
 
 class CreateRoomViewController: UIViewController{
     
-    
     var roomInPutMethod = LoginManage()
-    var roomDataMethod = RoomInfo()
-    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     @IBOutlet weak var createButton: UIButton!
     @IBOutlet weak var roomNameTF: UITextField!
     @IBOutlet weak var roomPWTF: UITextField!
@@ -26,7 +24,6 @@ class CreateRoomViewController: UIViewController{
     let six = UIAction(title: "6",handler:{_ in print("6")})
     let typePrivate = UIAction(title: "Private",handler:{_ in print("Private")})
     let typePublic = UIAction(title: "Public",handler:{_ in print("Public")})
-    
     @objc func roomNameHandler(_ textField: UITextField){
         var pattern: String
         var warning: String
@@ -44,9 +41,17 @@ class CreateRoomViewController: UIViewController{
         }
             roomInPutMethod.detectingLoginInput(_textField: textField, _label: label!, regularExpressionPattern: pattern, warningText: warning)
     }
+    func tempPlayer(){
+        appDelegate.roomCount = 1
+        appDelegate.count.append(3)
+        appDelegate.roomPW.append(1111)
+        appDelegate.roomName.append("temp")
+        appDelegate.roomType.append("Private")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tempPlayer()
         let numButtonMenu = UIMenu(title:"Select number",children: [three,four,five,six])
         let typeButtonMenu = UIMenu(title:"Selct type",children: [typePrivate,typePublic])
         numButton.menu = numButtonMenu
@@ -58,31 +63,26 @@ class CreateRoomViewController: UIViewController{
     
     @IBAction func createRoomButton(_ sender: Any) {
         if roomNameTF.text?.isEmpty == false && roomPWTF.text?.isEmpty == false{
+            appDelegate.roomCount += 1
             let intPW = Int(roomPWTF.text!)
-            guard let Number = numButton.menu?.title else {
-                    return
-                }
-                guard let selectedNum = Int(Number) else {
-                    return
-                }
-            guard let selectedType = typeButton.menu?.title else {
-                    return
-                }
-            roomDataMethod.name.append(roomNameTF.text!)
-            roomDataMethod.pw.append(intPW!)
-            roomDataMethod.count.append(selectedNum)
-            roomDataMethod.type.append(selectedType)
+            if let playerCount = numButton.title(for: .normal){
+                let intCount = Int(playerCount)
+                appDelegate.count.append(intCount!)
+            }
+            if let roomType = typeButton.title(for: .normal){
+                appDelegate.roomType.append(roomType)
+            }
+            appDelegate.roomName.append(roomNameTF.text!)
+            appDelegate.roomPW.append(intPW!)
         }
         else {
             let failed = UIAlertController(title: "Create room", message: "Failed", preferredStyle: .alert)
             failed.addAction(UIAlertAction(title: "확인", style: .cancel, handler: nil))
             present(failed, animated: true)
-            
         }
         
     }
-        
-    }
+}
     
     
     

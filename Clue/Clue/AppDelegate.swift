@@ -11,6 +11,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    var roomCount: Int = 0
+    var count: [Int] = []
+    var roomName: [String] = []
+    var roomPW: [Int] = []
+    var roomType: [String] = []
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

@@ -34,9 +34,9 @@ class HomeViewController: UIViewController {
             commuityView.alpha = 0
         }
         
+        
         // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation
