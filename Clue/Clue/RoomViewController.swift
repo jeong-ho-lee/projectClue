@@ -15,31 +15,41 @@ class RoomViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! roomTableViewCell
         cell.textLabel?.text = appDelegate.roomName[indexPath.row]
+        cell.button.addTarget(self, action: #selector(roomJoinAction), for: .touchUpInside)
         return cell
     }
+    @objc func roomJoinAction(sender:UIButton){
+        let tmpIndex = IndexPath(row: sender.tag,section: 0)
+        var tmpPW: Int? = 0
+        let alert = UIAlertController(title: "Join", message: "Please enter password", preferredStyle: .alert)
+        alert.addTextField { (pwField) in
+            pwField.placeholder = "Enter password"
+            let join = UIAlertAction(title: "Join",style: .default){ (action) in
+                if(pwField != nil){
+                    tmpPW = Int(pwField.text!)
+                    if(tmpPW! == self.appDelegate.roomPW[tmpIndex.row]){
+                        
+                    }
+                }
+            }
+            let cancel = UIAlertAction(title: "Cancel",style: .destructive)
+            alert.addAction(join)
+            alert.addAction(cancel)
+        }
+        if(appDelegate.roomType[tmpIndex.row] == "Private"){
+          present(alert, animated: true)
+      }
+    }
     
-   
-
+    
     @IBOutlet weak var roomTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.roomTableView?.dataSource = self
         self.roomTableView?.delegate = self
-
+        
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

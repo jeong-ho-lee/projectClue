@@ -7,12 +7,12 @@
 
 import UIKit
 
+protocol cellDelegate: AnyObject{
+    func joinButton()
+}
 class roomTableViewCell: UITableViewCell {
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    @IBAction func joinButton(_ sender: UIButton) {
-       
-    }
-
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate 
+    @IBOutlet var button: UIButton!
         override func awakeFromNib() {
             super.awakeFromNib()
             // Initialization code
