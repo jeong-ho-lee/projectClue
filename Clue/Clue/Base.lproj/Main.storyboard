@@ -503,12 +503,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAh-ZX-kGi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="W2A-G4-Kjw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3319.8473282442746" y="1037.323943661972"/>
+            <point key="canvasLocation" x="3337" y="1037"/>
         </scene>
-        <!--View Controller-->
+        <!--In Room View Controller-->
         <scene sceneID="zv1-lj-Cxv">
             <objects>
-                <viewController id="t2Y-4D-kmD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InRoomView" id="t2Y-4D-kmD" customClass="InRoomViewController" customModule="Clue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ucF-XE-MHI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -519,7 +519,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qYF-o3-cK7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3337" y="1837"/>
+            <point key="canvasLocation" x="3337" y="1729"/>
         </scene>
         <!--Create Room View Controller-->
         <scene sceneID="EAM-mx-I4J">
@@ -635,7 +635,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WiE-QT-GaU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4151.9083969465646" y="1036.6197183098593"/>
+            <point key="canvasLocation" x="4205" y="1037"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yWF-jV-RqV">
@@ -654,6 +654,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="L8w-ae-Q24"/>
         <segue reference="GAv-VE-OjJ"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -41,17 +41,8 @@ class CreateRoomViewController: UIViewController{
         }
             roomInPutMethod.detectingLoginInput(_textField: textField, _label: label!, regularExpressionPattern: pattern, warningText: warning)
     }
-    func tempPlayer(){
-        appDelegate.roomCount = 1
-        appDelegate.count.append(3)
-        appDelegate.roomPW.append(1111)
-        appDelegate.roomName.append("temp")
-        appDelegate.roomType.append("Private")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tempPlayer()
         let numButtonMenu = UIMenu(title:"Select number",children: [three,four,five,six])
         let typeButtonMenu = UIMenu(title:"Selct type",children: [typePrivate,typePublic])
         numButton.menu = numButtonMenu
