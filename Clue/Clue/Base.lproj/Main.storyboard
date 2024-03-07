@@ -637,24 +637,42 @@
             </objects>
             <point key="canvasLocation" x="4205" y="1037"/>
         </scene>
-        <!--View Controller-->
+        <!--Community View Controller-->
         <scene sceneID="yWF-jV-RqV">
             <objects>
-                <viewController id="PGP-87-MrX" sceneMemberID="viewController">
+                <viewController id="PGP-87-MrX" customClass="CommunityViewController" customModule="Clue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xz0-Q7-AgB">
                         <rect key="frame" x="0.0" y="0.0" width="361" height="616"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play with your friend!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMl-de-2WK">
+                                <rect key="frame" x="100" y="59" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NOA-P6-GmH">
+                                <rect key="frame" x="60" y="104" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="dM3-nM-X3u"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="OdO-C4-IKh"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SvH-3O-TUA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SvH-3O-TUA" firstAttribute="trailing" secondItem="lMl-de-2WK" secondAttribute="trailing" constant="101" id="F3K-cQ-tGb"/>
+                            <constraint firstItem="lMl-de-2WK" firstAttribute="leading" secondItem="SvH-3O-TUA" secondAttribute="leading" constant="100" id="ZlO-ZJ-BGG"/>
+                            <constraint firstItem="lMl-de-2WK" firstAttribute="top" secondItem="SvH-3O-TUA" secondAttribute="top" id="nyU-uw-1xp"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTg-IV-rQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5221" y="1037"/>
+            <point key="canvasLocation" x="5220.6106870229005" y="1036.6197183098593"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="L8w-ae-Q24"/>
         <segue reference="GAv-VE-OjJ"/>
     </inferredMetricsTieBreakers>
     <resources>
