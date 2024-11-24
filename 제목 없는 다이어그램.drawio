@@ -68,11 +68,47 @@
         <mxCell id="Cvy-O-KvyQ1xwykOr_Be-18" value="Samping support set and query set from base set using sampler." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="120" y="320" width="180" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-20" target="Cvy-O-KvyQ1xwykOr_Be-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Cvy-O-KvyQ1xwykOr_Be-20" value="Train model using loss.backward() (loss = NC Loss) and optimizer.step()." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="275" y="680" width="210" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Cvy-O-KvyQ1xwykOr_Be-21" value="Meta Training" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="340" y="240" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-22" target="Cvy-O-KvyQ1xwykOr_Be-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-22" value="Model" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="760" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-24" value="Update FC Layer for incremental session learning using prototype vectors." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="720" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-26" target="Cvy-O-KvyQ1xwykOr_Be-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-26" target="Cvy-O-KvyQ1xwykOr_Be-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-26" value="Logits" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="840" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-28" value="Extract CLS feature and Prompt feature from input and compute logits by passing features through FC layer." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="800" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-29" value="CE Loss" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="920" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-30" value="KD Loss" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="920" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-33" value="Compute cross entropy loss between logits and actual train_label." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="880" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-34" value="Compute knowledge distillation loss using lang_embed extracted from model and word_embed knowledge of specific class predefined before train." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="880" width="290" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
