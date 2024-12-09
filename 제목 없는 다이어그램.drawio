@@ -1,9 +1,179 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0" version="25.0.3">
   <diagram name="페이지-1" id="XfaHymIn2L7NaS6hmoha">
-    <mxGraphModel dx="524" dy="883" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1351" dy="883" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-1" target="Cvy-O-KvyQ1xwykOr_Be-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-1" target="Cvy-O-KvyQ1xwykOr_Be-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-1" value="Base Set" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-2" target="Cvy-O-KvyQ1xwykOr_Be-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="500" />
+              <mxPoint x="380" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-2" target="aUufRgbR5YCB58WS-cOv-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-2" target="aUufRgbR5YCB58WS-cOv-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wy02vr9-4xz4prmumTXU-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-2" target="Wy02vr9-4xz4prmumTXU-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-2" value="Query Set" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-3" target="Cvy-O-KvyQ1xwykOr_Be-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-3" value="Support Set" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-7" target="Cvy-O-KvyQ1xwykOr_Be-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-7" value="Prototype Vector" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="440" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-8" value="Computing prototype vectors of each support set classes using feature extractor&lt;span style=&quot;background-color: initial;&quot;&gt;.&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="60" y="400" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-9" target="Cvy-O-KvyQ1xwykOr_Be-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-9" value="Logits" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="520" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-12" value="Computing simularity between feature vector of query input and prototype vector." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="460" y="430" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-14" value="Computing loss using NC Softabs function and NC Loss function." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="170" y="560" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-17" target="Cvy-O-KvyQ1xwykOr_Be-20" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-17" value="NC Loss" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="600" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-18" value="Samping support set and query set from base set using sampler." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="120" y="320" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-20" target="Cvy-O-KvyQ1xwykOr_Be-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-20" value="Train model using loss.backward() and optimizer.step()." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="287.5" y="680" width="185" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-21" value="Base Session" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="440" y="740" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-22" target="Cvy-O-KvyQ1xwykOr_Be-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeColor=default;endArrow=none;endFill=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-22" value="Model" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="760" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-24" value="Update FC Layer for incremental session learning using prototype vectors." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="160" y="720" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-26" target="Cvy-O-KvyQ1xwykOr_Be-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-26" target="Cvy-O-KvyQ1xwykOr_Be-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-26" value="Logits" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="840" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-28" value="Extract CLS feature and Prompt feature from input and compute logits by passing features through FC layer." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="170" y="800" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-29" target="aUufRgbR5YCB58WS-cOv-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-29" value="CE Loss" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="920" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Cvy-O-KvyQ1xwykOr_Be-30" target="aUufRgbR5YCB58WS-cOv-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-30" value="KD Loss" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="920" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-33" value="Compute cross entropy loss between logits and actual train_label." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="880" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Cvy-O-KvyQ1xwykOr_Be-34" value="Simularize CLS Token and Vision Token&#39;s probability distribution using KL Divergence." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="460" y="880" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="aUufRgbR5YCB58WS-cOv-5" target="Cvy-O-KvyQ1xwykOr_Be-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-5" value="CE Loss" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="aUufRgbR5YCB58WS-cOv-6" target="Cvy-O-KvyQ1xwykOr_Be-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-6" value="ED Loss" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-10" value="Simularize CLS Token and Vision Token&#39;s probability distribution using KL Divergence." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="700" y="280" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="aUufRgbR5YCB58WS-cOv-16" target="aUufRgbR5YCB58WS-cOv-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-16" value="SKD Loss" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="1000" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-22" value="Repeat 8 times (5 classes per iteration, total 40 classes incrementally trained.)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="270" y="1080" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-24" value="Compute cross entropy loss between logits and actual train_label." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="700" y="200" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aUufRgbR5YCB58WS-cOv-27" value="Incremental Session" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="440" y="780" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wy02vr9-4xz4prmumTXU-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Wy02vr9-4xz4prmumTXU-1" target="Cvy-O-KvyQ1xwykOr_Be-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Wy02vr9-4xz4prmumTXU-1" value="SKD Loss" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wy02vr9-4xz4prmumTXU-4" value="Simularize Language Embedding Feature of class name and Language Token." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="700" y="360" width="240" height="40" as="geometry" />
+        </mxCell>
         <mxCell id="vp_coCIykCUALtjD8SIJ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vp_coCIykCUALtjD8SIJ-1" target="vp_coCIykCUALtjD8SIJ-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
